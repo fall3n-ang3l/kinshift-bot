@@ -13,7 +13,7 @@ pub struct ClusterSettings {
 }
 
 fn _default_bot_prefix() -> String {
-    "pk;".to_string()
+    "ks;".to_string()
 }
 
 #[derive(Deserialize, Debug)]
