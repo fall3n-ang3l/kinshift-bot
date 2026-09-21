@@ -20,11 +20,11 @@ async fn main() -> anyhow::Result<()> {
         CommandBuilder::new("\u{1f514} Ping author", "", CommandType::Message).build(),
 
         // slash commands
-        CommandBuilder::new("system", "Commands run on a PK system", CommandType::ChatInput)
+        CommandBuilder::new("kinlist", "Commands run on a KS kinlist", CommandType::ChatInput)
             .option(
                 SubCommandBuilder::new(
                     "new",
-                    "Makes a new PK system if one is not already on your account"
+                    "Makes a new KS kinlist if one is not already on your account"
                 )
                     .option(StringBuilder::new("name", "The name of the new system"))
                     .build()
